@@ -1,16 +1,16 @@
-# Morph Theme for VS Code & Cursor
+# Morph Theme for Cursor IDE
 
-A custom dark theme created by Peter Preketes for a personalized coding experience. I wanted to make my own custom theme for coding and programming that combines a comfortable dark background with vibrant accent colors for better code readability.
+A custom dark theme created by Peter Preketes specifically for Cursor IDE (the AI-powered fork of VS Code). I wanted to make my own custom theme for coding and programming that combines a comfortable dark background with vibrant accent colors for better code readability.
 
 ## What We Built
 
-This project is a custom VS Code/Cursor theme extension that I created from scratch. Here's what we did:
+This project is a custom theme extension for Cursor IDE that I created from scratch. Here's what we did:
 
-1. **Set up the Extension Structure** - Created a proper VS Code extension with manifest (`package.json`) and theme configuration
+1. **Set up the Extension Structure** - Created a proper extension with manifest (`package.json`) and theme configuration
 2. **Designed a Color Palette** - Carefully selected colors for optimal contrast and reduced eye strain during long coding sessions
 3. **Configured UI Elements** - Customized colors for the editor, sidebar, activity bar, status bar, terminal, and all UI components
 4. **Added Syntax Highlighting** - Defined token colors for different code elements (keywords, functions, strings, etc.) across all programming languages
-5. **Tested & Packaged** - Built the theme as a `.vsix` extension that can be installed in VS Code or Cursor
+5. **Tested & Packaged** - Built the theme as a `.vsix` extension that can be installed in Cursor IDE
 
 ## Features
 
@@ -35,21 +35,32 @@ The Morph theme uses a carefully crafted color palette inspired by modern dark t
 - **Orange**: `#fab387` - Constants, numbers
 - **Pink**: `#f5c2e7` - Regular expressions
 
-## Installation
+## Installation for Cursor IDE
 
-### From Source (This Repository)
-1. Clone this repository
-2. Copy to your extensions folder:
-   - **VS Code**: `~/.vscode/extensions/morph-theme`
-   - **Cursor**: `~/.cursor/extensions/morph-theme`
-3. Restart your editor
-4. Select the theme: `Cmd+K Cmd+T` (Mac) or `Ctrl+K Ctrl+T` (Windows/Linux)
-5. Choose "Morph Dark"
+### Method 1: From Source (This Repository)
+1. Clone this repository: `git clone https://github.com/PeterP22/morph-theme.git`
+2. Create a symlink to Cursor's extensions folder:
+   ```bash
+   ln -sf /path/to/morph-theme ~/.cursor/extensions/morph-theme
+   ```
+3. Restart Cursor IDE completely
+4. Enable the theme:
+   - Open Command Palette: `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
+   - Type "Preferences: Color Theme"
+   - Select "Morph Dark"
+   - Or use the shortcut: `Cmd+K Cmd+T` (Mac) or `Ctrl+K Ctrl+T` (Windows/Linux)
 
-### From VSIX Package
-1. Download the `.vsix` file from releases
-2. Install using: `code --install-extension morph-theme-0.0.1.vsix`
-3. Or drag the `.vsix` file into the Extensions view
+### Method 2: From VSIX Package
+1. Download the `.vsix` file from the [Releases](https://github.com/PeterP22/morph-theme/releases) page
+2. Install in Cursor using:
+   ```bash
+   cursor --install-extension morph-theme-0.0.1.vsix
+   ```
+   Or if `cursor` command is not available:
+   ```bash
+   code --install-extension morph-theme-0.0.1.vsix
+   ```
+3. Restart Cursor and select "Morph Dark" from the theme picker
 
 ## Development
 
@@ -61,13 +72,12 @@ To modify or enhance the theme:
 
 ## Technical Details
 
-- **Built for**: VS Code 1.90.0+
+- **Built for**: Cursor IDE / VS Code 1.90.0+
 - **Theme Type**: Dark theme based on `vs-dark`
 - **Semantic Highlighting**: Enabled for enhanced language support
 - **File Structure**:
   - `package.json` - Extension manifest
   - `themes/morph-dark-color-theme.json` - Complete theme definition
-  - `test_theme.py` - Python test file to showcase syntax highlighting
 
 ## Contributing
 

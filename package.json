@@ -1,7 +1,7 @@
 {
   "name": "morph-theme",
   "displayName": "Morph Theme",
-  "description": "A sleek, modern dark theme with vibrant accents for VS Code and Cursor",
+  "description": "A sleek, modern dark theme with vibrant accents for Cursor IDE",
   "version": "0.0.1",
   "publisher": "peterpreketes",
   "author": "Peter Preketes",
@@ -15,7 +15,9 @@
     "theme",
     "dark theme",
     "morph",
-    "color theme"
+    "color theme",
+    "cursor",
+    "cursor ide"
   ],
   "galleryBanner": {
     "color": "#1e1e2e",
@@ -32,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peterpreketes/morph-theme"
+    "url": "https://github.com/PeterP22/morph-theme"
   },
   "bugs": {
-    "url": "https://github.com/peterpreketes/morph-theme/issues"
+    "url": "https://github.com/PeterP22/morph-theme/issues"
   },
-  "homepage": "https://github.com/peterpreketes/morph-theme#readme",
+  "homepage": "https://github.com/PeterP22/morph-theme#readme",
   "license": "MIT",
   "scripts": {
     "package": "vsce package",
