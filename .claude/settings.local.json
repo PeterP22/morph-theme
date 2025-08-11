@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__perplexity__perplexity_ask",
+      "Bash(npm:*)",
+      "Bash(node:*)",
+      "Bash(yo code:*)",
+      "Bash(mkdir:*)",
+      "Bash(ln:*)",
+      "Bash(npx vsce:*)",
+      "Bash(cursor:*)",
+      "Bash(code:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
