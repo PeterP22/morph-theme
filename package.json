@@ -1,7 +1,7 @@
 {
   "name": "morph-theme",
-  "displayName": "Morph Theme",
-  "description": "A sleek, modern dark theme with vibrant accents for Cursor IDE",
+  "displayName": "Morph Discord Theme",
+  "description": "A dark theme for Cursor IDE inspired by Discord's classic color palette",
   "version": "0.0.1",
   "publisher": "peterpreketes",
   "author": "Peter Preketes",
@@ -15,18 +15,20 @@
     "theme",
     "dark theme",
     "morph",
+    "discord",
+    "discord theme",
     "color theme",
     "cursor",
     "cursor ide"
   ],
   "galleryBanner": {
-    "color": "#1e1e2e",
+    "color": "#36393f",
     "theme": "dark"
   },
   "contributes": {
     "themes": [
       {
-        "label": "Morph Dark",
+        "label": "Morph Discord",
         "uiTheme": "vs-dark",
         "path": "./themes/morph-dark-color-theme.json"
       }
